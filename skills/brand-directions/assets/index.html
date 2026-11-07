@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- Sheet of directions. Add one link per file, and translate the words into the brand's language.
+     Plain links into an iframe, so it needs no script or server and opens from disk. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Directions</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; font: 15px/1.4 system-ui, sans-serif; }
+  nav { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .75rem; padding: .6rem 1rem; border-bottom: 1px solid #ddd; }
+  nav a { padding: .2rem .7rem; border: 1px solid #bbb; border-radius: 6px; color: inherit; text-decoration: none; }
+  nav a:hover, nav a:focus { background: #eee; }
+  iframe { flex: 1; width: 100%; border: 0; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="A.html" target="view">A</a>
+  <a href="B.html" target="view">B</a>
+  <a href="C.html" target="view">C</a>
+  <span>Which one fits the brand? Say it in words, for example: "B, but the type from C".</span>
+</nav>
+<iframe name="view" src="A.html" title="Direction"></iframe>
+</body>
+</html>
