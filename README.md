@@ -50,12 +50,21 @@ You stop three times:
    keeping what you have.
 3. Accept a page that shows the brand and how an agent did real tasks with it and without it.
 
-You get `brand/BRAND.md`, which agents read; `brand/index.html`, which you look at; and a line in
-`AGENTS.md` or `CLAUDE.md` so agents find it. The book works without these skills installed, and
+Besides `brand/BRAND.md` and `brand/index.html`, you get a line in `AGENTS.md` or `CLAUDE.md` so
+agents find the book. The book works without these skills installed, and
 `node brand/tools/brand.mjs build` rebuilds the page.
 
 The system does not draw logos, check work agents produce, or add hooks or CI. See
 [docs/decisions.md](docs/decisions.md).
+
+## How it differs
+
+- A [`DESIGN.md`](https://github.com/google-labs-code/design.md) file describes a design system's
+  tokens for coding agents. brandfile starts before the tokens: it works out the brand with you,
+  including its name, meaning, voice, and your decisions, and then writes the color, type, and layout
+  rules.
+- Skills such as `brand-guidelines` in [anthropics/skills](https://github.com/anthropics/skills) apply
+  a brand that already exists. brandfile writes one down from what you have, or makes a new one.
 
 ## Layout
 
