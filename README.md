@@ -21,8 +21,12 @@ and the other agents it finds; `-a claude-code`, `-a codex`, and so on limit it 
 Without `-g`, they go into the current project only.
 
 To update, run `npx skills update -g`, or `npx skills update` in the project. Releases are tagged
-`vX.Y.Z`. To stay on one, install from `Dankosik/brandfile@v0.1.0`: updates then keep that release, and
-you move to the next by installing its tag the same way.
+`vX.Y.Z`. To stay on one, install its tag; updates then keep that release, and you move to the next by
+installing its tag the same way:
+
+```bash
+npx skills add 'Dankosik/brandfile#v0.1.0' --skill '*' -g
+```
 
 To work on brandfile itself, link the skills from a clone into Claude Code, so edits apply at once:
 
