@@ -1,8 +1,12 @@
 # brandfile
 
-Agent skills for creating an AI-native brand book: one written first for agents to read and follow.
-You and your agent make it together. The skills start by interviewing you about your brand and product
-and asking for references you like, and you get a page that shows how the brand book looks.
+Agent skills that interview you and write a brand book: brand guidelines your coding agents follow.
+For Claude Code, Codex, Cursor, and other agents that load skills.
+
+It is made for a founder or developer of a small product, and needs no design vocabulary. You answer
+questions about your brand and product, share references you like, and choose a style. You get
+`brand/BRAND.md`, the brand book agents read before work people will see, and `brand/index.html`, a
+page that shows how the brand looks.
 
 Status: the first version is written, but no skill has been run on a real brand yet. Nothing here is
 evidence that it works.
